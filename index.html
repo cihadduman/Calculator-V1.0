@@ -1,0 +1,50 @@
+<html> 
+<head> 
+<title>Calculator</title> 
+<style>
+input[type=button] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+</style>
+<script language="javaScript"> 
+
+function topla(ne){ 
+ne.sonuç.value=parseFloat(ne.say1.value)+parseFloat(ne.say2.value); 
+} 
+function çikar(ne){ 
+ne.sonuç.value=parseFloat(ne.say1.value)-parseFloat(ne.say2.value); 
+} 
+function çarp(ne){ 
+ne.sonuç.value=parseFloat(ne.say1.value)*parseFloat(ne.say2.value); 
+} 
+function böl(ne){ 
+ne.sonuç.value=parseFloat(ne.say1.value)/parseFloat(ne.say2.value); 
+} 
+function ort(ne){ 
+ne.sonuç.value=[parseFloat(ne.say1.value)+parseFloat(ne.say2.value)]/2; 
+} 
+
+</script> 
+</head>
+<body> 
+<table border="20" width="20" bgcolor="black"><tr><td> 
+<form name="aaa"><font color="white"> 	
+<center><b>Calculator V1.0</b></center> 
+1.sayi<input type="text" name="say1"> 
+<br>2.sayi<input type="text" name="say2"> 
+<br>sonuç<input type="text" name="sonuç"> 
+<center> 
+<input type="button" id="button1" value="+" onclick="topla(this.form)"> 
+<input type="button" id="search2" value="-" onclick="çikar(this.form)"> 
+<input type="button" id="search3" value="x" onclick="çarp(this.form)"> 
+<input type="button" id="search4" value="/" onclick="böl(this.form)"> 
+<input type="button" id="search5" value="ort" onclick="ort(this.form)"> 
+</form> 
+</td></tr></table> 
+</body> 
+</html>
