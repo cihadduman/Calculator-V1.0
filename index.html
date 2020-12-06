@@ -13,19 +13,19 @@ input[type=button] {
 </style>
 <script language="javaScript"> 
 
-function topla(ne){ 
+function toplama(ne){ 
 ne.sonuç.value=parseFloat(ne.say1.value)+parseFloat(ne.say2.value); 
 } 
-function çikar(ne){ 
+function çikarma(ne){ 
 ne.sonuç.value=parseFloat(ne.say1.value)-parseFloat(ne.say2.value); 
 } 
-function çarp(ne){ 
+function çarpma(ne){ 
 ne.sonuç.value=parseFloat(ne.say1.value)*parseFloat(ne.say2.value); 
 } 
-function böl(ne){ 
+function bölme(ne){ 
 ne.sonuç.value=parseFloat(ne.say1.value)/parseFloat(ne.say2.value); 
 } 
-function ort(ne){ 
+function ortalama(ne){ 
 ne.sonuç.value=[parseFloat(ne.say1.value)+parseFloat(ne.say2.value)]/2; 
 } 
 
@@ -39,11 +39,11 @@ ne.sonuç.value=[parseFloat(ne.say1.value)+parseFloat(ne.say2.value)]/2;
 <br>2.sayi<input type="text" name="say2"> 
 <br>sonuç<input type="text" name="sonuç"> 
 <center> 
-<input type="button" id="button1" value="+" onclick="topla(this.form)"> 
-<input type="button" id="search2" value="-" onclick="çikar(this.form)"> 
-<input type="button" id="search3" value="x" onclick="çarp(this.form)"> 
-<input type="button" id="search4" value="/" onclick="böl(this.form)"> 
-<input type="button" id="search5" value="ort" onclick="ort(this.form)"> 
+<input type="button" id="button1" value="+" onclick="toplama(this.form)"> 
+<input type="button" id="search2" value="-" onclick="çikarma(this.form)"> 
+<input type="button" id="search3" value="x" onclick="çarpma(this.form)"> 
+<input type="button" id="search4" value="/" onclick="bölme(this.form)"> 
+<input type="button" id="search5" value="ort" onclick="ortalama(this.form)"> 
 </form> 
 </td></tr></table> 
 </body> 
